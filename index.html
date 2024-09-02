@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Comsite Multimediax</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=montserrat:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        :root {
+            --primary-color: #619b8a;
+            /* Azul (60%) */
+            --secondary-color: #2ecc71;
+            /* Verde (30%) */
+            --accent-color: #e74c3c;
+            /* Vermelho (10%) */
+            --text-color: #333333;
+            /* Cor do Texto */
+            --background-color: #ffffff;
+            /* Cor de Fundo */
+        }
+
+        body {
+            font-family: montserrat, sans-serif;
+            ;
+        }
+
+        .navbar i {
+            font-size: 26px;
+            color: var(--primary-color);
+            margin-right: 5px;
+        }
+
+        /* Cor normal dos links */
+        .nav-link {
+            color: #49806f;
+            transition: color 0.3s ease-in-out;
+            position: relative;
+        }
+
+        /* Cor ao passar o mouse (hover) e visited */
+        .nav-link:hover,
+        .nav-link:visited {
+            color: #619b8a;
+        }
+
+        .nav-link.active {
+            color: #619b8a;
+        }
+
+        /* Barra inferior ao passar o mouse */
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            height: 2px;
+            background-color: #619b8a;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            transform: translateX(50%);
+        }
+
+        /* Fade in da barra no hover e no item ativo */
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            opacity: 1;
+        }
+
+        .fInter {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .col-custom {
+            max-width: 233px;
+            flex: 0 0 233px; /* Garante que a coluna tenha largura fixa */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="container d-flex justify-content-around">
+                <a class="navbar-brand mt-2" href="#"><img src="src/images/mvdjs.png" alt=""></a>
+                <div>
+                    <ul class="nav ms-auto" style="    font-weight: 500;
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;">
+                        <li class="nav-item"><a class="nav-link" href="#">A MOVING</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">DJ'S</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">MÚSICOS</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">ATRAÇÔES
+                                ESPECIAIS</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">PARCEIROS</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">EQUIPE</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">CONTATO</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <!-- <i class="fa-solid fa-bars" style="font-size: 1.6rem; cursor: pointer; color: cadetblue;"
+                        id="openMenu"></i> -->
+                </div>
+                <div
+                    style="height: 600px; width: 100%; background-image: url(src/images/a8080f_220fa31988ce4a5294a1f23fe3f5723b~mv2.webp); margin-top: -46px; border-radius: 16px;">
+                </div>
+
+            </div>
+        </nav>
+        <div class="container mx-auto d-flex justify-content-center my-5 flex-column">
+            <h1 class="fs-4 fw-bold text-center">VIVA EXPERIÊNCIAS ATRAVÉS DA MÚSICA</h1>
+            <h2 class="fs-5 text-center mb-4" style="color: var(--primary-color);">CONFIRA NOSSO CASTING</h2>
+            <p class="text-center" style="max-width: 600px; margin: auto;"><strong>Moving Eventos</strong>, é uma
+                agência de DJ'S e
+                músicos,
+                especializada em atender todos
+                os tipos de
+                eventos (eventos corporativos, eventos Sociais, casamentos, 15 anos, formaturas etc...), levando
+                alegria, inovação e qualidade aos seus clientes.</p>
+        </div>
+        <div class="container-fluid py-3" style="background-color: var(--primary-color);">
+            <div class="container my-3">
+                <h1 class="text-center display-2 text-white fInter">DJ'S</h1>
+                <div id="grid-container" class="row g-4 justify-content-center">
+                    <!-- O conteúdo será gerado dinamicamente aqui -->
+                </div>  
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script type="module" defer>
+        import { init } from '/src/js/init.js';
+        window.addEventListener("load", function () {
+            init()
+        })
+    </script>
+</body>
+
+</html>
